@@ -1,6 +1,6 @@
-import eadrax.user
+import eadrax.user.login
 
-class Login(eadrax.user.login.usecase.Repository):
+class Login(eadrax.user.login.Repository):
 
     def get_password_by_username(self, username):
         pass
