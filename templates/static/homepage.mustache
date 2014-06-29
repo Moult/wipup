@@ -1,0 +1,10 @@
+Hello, {{name}}!<br>
+{{#was_told_stuff}}
+You said: {{stuff}}
+{{/was_told_stuff}}
+<br>
+<form action="" method="post">
+    <input type="text" name="information">
+    <input type="submit" value="Tell me about stuff!">
+</form>
+{{>../partials/signature}}
