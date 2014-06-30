@@ -17,7 +17,7 @@ def homepage(request):
     usecase = eadrax.user.login.load(
         user = eadrax.data.User(),
         repository = wipup.repositories.user.Login(),
-        authenticator = wipup.tools.Authenticator(),
+        authenticator = wipup.tools.Authenticator(request),
         encryptor = wipup.tools.Encryptor()
     )
 
